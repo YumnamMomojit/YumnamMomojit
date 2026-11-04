@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" role="img" aria-labelledby="title desc">
+  <title id="title">Yumnam Momojit Singh — animated profile portrait</title>
+  <desc id="desc">A portrait card with a gentle floating motion, a rotating orbit, and a 3D-style shadow.</desc>
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101b3c"/>
+      <stop offset="1" stop-color="#07101e"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#76f7dc"/>
+      <stop offset=".52" stop-color="#7b8cff"/>
+      <stop offset="1" stop-color="#df7cff"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-30%" width="180%" height="190%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="13"/>
+      <feOffset dy="15"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.03 0 0 0 0 0.12 0 0 0 .72 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="portraitClip"><rect x="83" y="75" width="254" height="254" rx="54"/></clipPath>
+  </defs>
+  <rect x="8" y="8" width="404" height="404" rx="100" fill="url(#backdrop)"/>
+  <circle cx="210" cy="205" r="158" fill="#536cff" opacity=".1">
+    <animate attributeName="opacity" values=".06;.15;.06" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <g fill="none" stroke="url(#rim)" opacity=".78">
+    <ellipse cx="210" cy="203" rx="169" ry="71" stroke-width="2" transform="rotate(-28 210 203)"/>
+    <ellipse cx="210" cy="203" rx="169" ry="71" stroke-width="1" opacity=".48" transform="rotate(28 210 203)"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 2;0 -8;0 2" dur="4.8s" repeatCount="indefinite"/>
+    <g filter="url(#shadow)">
+      <rect x="75" y="67" width="270" height="270" rx="63" fill="#17234a" stroke="url(#rim)" stroke-width="7"/>
+      <rect x="83" y="75" width="254" height="254" rx="54" fill="#101827"/>
+      <image href="https://media.licdn.com/dms/image/v2/D4D03AQGls8Oxd59wQw/profile-displayphoto-scale_400_400/B4DZ81z3dOJAAg-/0/1783314219483?e=1795651200&amp;v=beta&amp;t=yafJVwrQRa71pUr1xBqMqBrD9SjwrFYHz97rFl_h5No" x="83" y="75" width="254" height="254" preserveAspectRatio="xMidYMid slice" clip-path="url(#portraitClip)"/>
+      <rect x="83" y="75" width="254" height="254" rx="54" fill="url(#shine)" opacity=".5"/>
+      <rect x="83" y="75" width="254" height="254" rx="54" fill="none" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
+    </g>
+  </g>
+  <circle cx="340" cy="104" r="9" fill="#74f3d4">
+    <animate attributeName="r" values="7;11;7" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".55;1;.55" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="78" cy="300" r="5" fill="#d78aff">
+    <animate attributeName="cy" values="300;290;300" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="210" y="377" text-anchor="middle" fill="#dce7ff" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">YUMNAM MOMOJIT SINGH</text>
+</svg>

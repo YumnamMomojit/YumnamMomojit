@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="profile-3d.svg" alt="Animated 3D-style portrait of Yumnam Momojit Singh" width="230" />
+
 # Hi, I'm Yumnam Momojit Singh 👋
 
 ### Assistant Professor & AI Researcher • Agentic AI Builder • PhD Scholar
